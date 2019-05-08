@@ -1,0 +1,337 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html{
+	font-size:10px;
+	background: #fff;
+}
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 99;
+}
+
+header .tittle{
+	position: relative;
+	padding:0 5rem;
+	height:60px;
+	width:1100px;
+}
+
+
+.tittle .imgBox{
+	display: inline-block;
+	vertical-align: middle;
+	height:60px;
+	width:150px;
+}
+
+.imgBox img{
+	width:100%;
+	height:100%;
+}
+
+.tittle ul{
+ 	display:inline-block;
+	position:absolute;
+    right:60px;
+}
+
+.tittle  ul li{
+   display:inline-block;
+   vertical-align: middle;
+}
+
+.tittle  ul li a{
+	font-size:1.5rem;
+	color: #333;
+	margin-right:2rem;
+	line-height:60px;	
+}
+.tittle  ul li a:hover{
+	text-decoration: underline;
+    color:#172991;
+    font-weight:700;
+}
+
+
+
+
+
+
+.container{
+	width: auto;
+	height:800px;
+	margin-top: 60px;
+}
+.Spokesman{
+	position: relative;
+	height: 800px;
+	background: #fff;
+}
+.block{
+	position: absolute;
+	top:200px;
+	left:150px;
+	width: 400px;
+	height: 200px;
+	background: transparent;
+	border:10px solid #FFA500;
+}
+.zhPic{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index:5;
+}
+.twPic{
+	position: absolute;
+	right:40px;
+	bottom:70px;
+	z-index:10;
+}
+.live{
+	position: absolute;
+	top:50px;
+	right:300px;
+}
+.QR-code{
+	position: absolute;
+	bottom: 70px;
+	left:100px;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.brand{
+	width:auto;
+	height:600px;
+	background-image: url("img/dashi.jpg");
+	background-size:100% 100%;
+	background-position:center center;
+}
+
+
+
+
+
+
+.aboutMe{
+	width:auto;
+}
+
+.about-box{
+	box-sizing: border-box;
+}
+.content,.box{
+  width:1000px;
+  padding: 0 50px;
+}
+.aboutMe h1{
+	margin-top:50px;
+	color: #000;
+}
+.aboutMe p{
+	padding:10px 0;
+	color: #000;
+}
+.aboutMe .w{
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	width:1100px;
+}
+
+.aboutMe .w img{
+   width: 320px;
+   height: 260px;
+   margin:20px 0;
+}
+
+
+
+
+
+
+
+
+.footer{
+	width: auto;
+	height:900px;
+	background: #000;
+	margin-top: 70px;
+}
+.footing-bg{
+	height:600px;
+	background-image:url('img/bg.png');
+	background-position: center center;
+}
+
+.thisLove,
+.love{
+	padding:60px 0 0 60px;
+}
+.love .pic{
+	margin-bottom:30px;
+}
+.love .pic img{
+	vertical-align: middle;
+}
+.love .pic span{
+	vertical-align: middle;
+	margin-left:20px;
+}
+
+
+.footer-message{
+	height: 300px;
+	text-align: center;
+}
+.footer-message img{
+	width:300px;
+	height:100px;
+	padding:10px;
+}
+.footer-message p{
+	padding:20px;
+}
+
+
+
+
+
+.tittle,
+.cont-box,
+.about-box,
+.wrp,
+.footer-message{
+	width:1100px;
+	margin: 0 auto;
+    color: #ccc;
+}
+
+
+@media screen and (max-width:1100px) {
+	header{
+		width:1100px;
+	}
+	
+	.tittle ul{
+	  left:500px;
+	}
+	
+	.footer,.brand{
+		width:1100px;
+	}
+	
+	.content,
+	.box{
+	  width:800px;
+	  padding: 0 50px;
+	}
+
+	.aboutMe .w{
+		width:800px;
+	}
+	.tittle,
+	.cont-box,
+	.about-box,
+	.wrp,
+	.footer-message{
+		width:900px;
+		margin: 0 auto;
+	    color: #ccc;
+	}
+	
+	.live{
+		top:50px;
+		left:200px;
+	}
+	.twPic{
+		left:50px;
+		top:300px;
+	}
+	.zhPic{
+		top: 70px;
+		left:400px;
+	}
+	.QR-code{
+		bottom: 70px;
+		left:300px;
+	}
+	.twPic img{
+		width: 360px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+	header{
+	  width:600px;
+	}
+
+	.tittle ul{
+	 left:300px;
+	}
+	
+	.content,.box{
+	  width:600px;
+	  padding: 0 50px;
+	}
+
+	.aboutMe .w{
+		width:600px;
+	}
+	
+	
+	.footer,.brand{
+		width: 800px;
+	}
+	.tittle,
+	.cont-box,
+	.about-box,
+	.wrp,
+	.footer-message{
+		width:600px;
+		margin: 0 auto;
+	    color: #ccc;
+	}
+	
+	.live{
+		top: 120px;
+    	left: 250px;
+	}
+	.twPic{
+		left:20px;
+		top:230px;
+	}
+	.zhPic{
+		left:440px;
+		top:230px;
+	}
+	.twPic img,.zhPic img{
+		width:260px;
+	}
+	
+}
+
+
